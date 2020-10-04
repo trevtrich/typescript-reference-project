@@ -1,0 +1,6 @@
+_extends: .github
+repository:
+  name: typescript-reference-project
+  description: Solidifying thoughts around TypeScript project config.
+  homepage: 'https://npm.im/@trevtrich/typescript-reference-project'
+  private: false
