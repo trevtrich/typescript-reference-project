@@ -34,6 +34,8 @@
     "watch": "run-s 'build:js -- --watch'",
     "prepack": "run-s build",
     "test:unit": "nyc run-s test:unit:base",
+    "test:type-check": "tsc --noEmit",
+    "test:type-check:watch": "run-s 'test:type-check -- --watch'",
     "coverage:report": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "test:unit:base": "DEBUG=any mocha 'src/**/*-test.js'",
     "lint:peer": "npm ls >/dev/null"
@@ -46,6 +48,7 @@
     "@form8ion/eslint-config-mocha": "1.2.9",
     "@form8ion/remark-lint-preset": "1.0.10",
     "@istanbuljs/nyc-config-babel": "3.0.0",
+    "@rollup/plugin-typescript": "6.1.0",
     "@travi/any": "2.0.13",
     "@travi/travis-lint": "1.0.1",
     "babel-plugin-istanbul": "6.0.0",
@@ -64,6 +67,7 @@
     "rimraf": "3.0.2",
     "rollup": "2.28.2",
     "rollup-plugin-auto-external": "2.0.0",
-    "sinon": "9.1.0"
+    "sinon": "9.1.0",
+    "typescript": "4.0.5"
   }
 }
