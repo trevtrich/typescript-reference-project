@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
-    "strict": true
-  }
+    "strict": true,
+    "lib": ["es6"]
+  },
+  "exclude": ["node_modules"]
 }

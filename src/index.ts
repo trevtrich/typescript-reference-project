@@ -1,8 +1,12 @@
-interface User {
+export interface User {
   name: string;
   id: number;
 }
 
-export function hello(user: User) {
-  console.log(`hello: ${user.name}`);
+export function getName(user: User) {
+  return user.name;
+}
+
+export function getId(user: User) {
+  return user.id;
 }
