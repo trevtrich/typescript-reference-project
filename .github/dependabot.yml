@@ -3,7 +3,9 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "live"
+      interval: "daily"
+      time: "00:00"
+      timezone: "America/Chicago"
     commit_message:
       prefix: "fix"
       prefix-development: "chore"
