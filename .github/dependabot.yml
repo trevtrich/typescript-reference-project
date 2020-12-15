@@ -1,16 +1,10 @@
-version: 1
-update_configs:
-  - package_manager: "javascript"
+version: 2
+updates:
+  - package-ecosystem: "npm"
     directory: "/"
-    update_schedule: "live"
-    automerged_updates:
-      - match:
-          dependency_type: "development"
-          update_type: "all"
-      - match:
-          dependency_type: "production"
-          update_type: "all"
+    schedule:
+      - interval: "live"
     commit_message:
       prefix: "fix"
-      prefix_development: "chore"
-      include_scope: true
+      prefix-development: "chore"
+      include: "scope"
