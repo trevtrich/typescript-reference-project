@@ -55,7 +55,7 @@
     "@types/chai": "4.2.14",
     "@types/mocha": "8.2.0",
     "babel-plugin-istanbul": "6.0.0",
-    "ban-sensitive-files": "1.9.12",
+    "ban-sensitive-files": "1.9.14",
     "chai": "4.2.0",
     "codecov": "3.7.2",
     "cz-conventional-changelog": "3.3.0",
